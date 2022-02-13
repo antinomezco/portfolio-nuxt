@@ -75,7 +75,7 @@ export default {
           name: 'portfolio',
           title: 'Portfolio page',
           link: 'https://www.csaldana.xyz',
-          source: 'https://github.com/antinomezco/portfolio2021',
+          source: 'https://github.com/antinomezco/portfolio-nuxt',
           tech: 'VueJS, Boostrap-vue',
           desc: 'I wanted a simple portfolio page to show my skills using only HTML, CSS, Nuxt (VueJS) and Boostrap-vue.',
         },
