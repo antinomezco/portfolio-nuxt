@@ -65,7 +65,7 @@ export default {
           id: 2,
           name: 'reciperest',
           title: 'Recipe Database (backend)',
-          link: 'https://github.com/antinomezco/cookingdb',
+          link: '',
           source: 'https://github.com/antinomezco/cookingdb',
           tech: 'Django, Postgres, Rest',
           desc: 'I wanted a place to store my recipes and not have them fixed in code, so I used Django API for use in the Recipe Database (frontend) since Python is easy to understand. Allows for REST CRUD connection for users and recipes.',
