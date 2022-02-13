@@ -43,7 +43,6 @@ export default {
       Arvo: true,
       'Open+Sans': true,
       'Roboto+Slab' : true,
-      Lato : true,
     }
   }
 }

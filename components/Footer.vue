@@ -1,5 +1,5 @@
 <template>
-  <section class="footer">
+  <footer class="footer">
     <b-row class="justify-content-center">
       <b-col class="d-flex justify-content-center">
         <div class="py-5">
@@ -37,7 +37,7 @@
         </div>
       </b-col>
     </b-row>
-  </section>
+  </footer>
 </template>
 
 <script>

@@ -21,7 +21,7 @@
             <p class="p-2 font-weight-bold">{{ skill.alt }}</p>
           </div>
         </div>
-        <ScrollTo desc="Who Am I?" variantColor="primary" descendTo="photo" />
+        <BaseScrollTo desc="Who Am I?" variantColor="primary" descendTo="photo" />
       </b-col>
     </b-row>
   </section>
