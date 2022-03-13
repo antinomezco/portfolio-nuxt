@@ -8,7 +8,7 @@
       </b-col>
     </b-row>
     <b-row v-for="box in boxes" :key="box.name" class="boxes pb-5 justify-content-center">
-      <b-col lg="5" md="6" cols="12">
+      <b-col lg="5" md="6" cols="12" class="d-flex flex-column justify-content-center">
         <div class="font-size-biggish purple">
           {{ box.title }}
         </div>
@@ -35,6 +35,7 @@
         <div class="">
           <a :href="box.link" target="_blank">
             <b-img
+              thumbnail
               fluid-grow
               rounded
               :src="require(`../assets/images/${box.name}.png`)"
@@ -54,31 +55,40 @@ export default {
       boxes: [
         {
           id: 1,
+          name: 'magazine',
+          title: 'Le Centre franco-ontarien de ressources pédagogiques',
+          link: 'https://numerico.cforp.ca/magazines',
+          source: '',
+          tech: 'VueJS (Nuxt), Boostrap-vue, Tailwind, Strapi',
+          desc: 'Built QUAD9 and Mon Mag À Moi magazine articles using Bootstrap-vue and Tailwind. Created strapi backend to dynamically reuse magazine article templates.',
+        },
+        {
+          id: 2,
           name: 'recipe',
           title: 'Recipe Database (frontend)',
           link: 'https://agitated-hermann-0d809c.netlify.app/',
           source: 'https://github.com/antinomezco/calaveria',
-          tech: 'VueJS, Firebase, Auth0',
-          desc: 'I love cooking, so I created a simple searchable recipe website for myself so I can store my favorite recipes and share them with my friends/family. Website was made using VueJS with authentication through Auth0. Dynamically created recipe pages, CRUD and image storage through Firebase storage buckets available.',
+          tech: 'VueJS (Nuxt), Firebase, Auth0, Tailwind',
+          desc: 'Searchable recipe website to store my favorite recipes and share them with my friends/family. Website was made using VueJS with authentication through Auth0. Dynamically created recipe pages, CRUD and image storage through Firebase storage buckets available.',
         },
         {
-          id: 2,
+          id: 3,
           name: 'reciperest',
           title: 'Recipe Database (backend)',
           link: '',
           source: 'https://github.com/antinomezco/cookingdb',
           tech: 'Django, Postgres, Rest',
-          desc: 'I wanted a place to store my recipes and not have them fixed in code, so I used Django API for use in the Recipe Database (frontend) since Python is easy to understand. Allows for REST CRUD connection for users and recipes.',
+          desc: 'API for use in the above Recipe Database. Allows for REST CRUD connections for users and recipes.',
         },
         {
-          id: 3,
+          id: 4,
           name: 'portfolio',
           title: 'Portfolio page',
           link: 'https://www.csaldana.xyz',
           source: 'https://github.com/antinomezco/portfolio-nuxt',
-          tech: 'VueJS, Boostrap-vue',
-          desc: 'I wanted a simple portfolio page to show my skills using only HTML, CSS, Nuxt (VueJS) and Boostrap-vue.',
-        },
+          tech: 'VueJS (Nuxt), Boostrap-vue',
+          desc: 'Portfolio page to show my skills. Inspired by the Simplefolio template.',
+        }
       ],
     }
   },
