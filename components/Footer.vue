@@ -54,7 +54,7 @@ export default {
         {
           title: 'Resumé',
           srcImage: 'cv',
-          href: 'https://drive.google.com/file/d/1j8Tsc7AGqAvY_QPRSnIY-d7QFMdKAGyx/view?usp=sharing',
+          href: 'https://drive.google.com/file/d/1BN-iVteSjSrsRDsF62eaxipoa9kQPjBi/view?usp=sharing',
         },
         {
           title: 'LinkedIn',
