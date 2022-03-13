@@ -81,6 +81,15 @@ export default {
           desc: 'API for use in the above Recipe Database. Allows for REST CRUD connections for users and recipes.',
         },
         {
+          id: 3,
+          name: 'spacetourism',
+          title: 'Space Tourism',
+          link: 'https://thirsty-archimedes-a0d572.netlify.app/',
+          source: 'https://github.com/antinomezco/space-tourism-nuxt',
+          tech: 'VueJS (Nuxt), Tailwind',
+          desc: 'Simple landing page for improving my skills using Tailwind.',
+        },
+        {
           id: 4,
           name: 'portfolio',
           title: 'Portfolio page',
