@@ -39,6 +39,7 @@ export default {
         { title: 'react', alt: 'React', web: 'https://reactjs.org/' },
         { title: 'strapi', alt: 'Strapi', web: 'https://strapi.com/' },
         { title: 'bootstrap-vue', alt: 'BootstrapVue', web: 'https://bootstrap-vue.org/' },
+        { title: 'tailwind-css', alt: 'TailwindCSS', web: 'https://tailwindcss.com/' },
         {
           title: 'django',
           alt: 'Django',
