@@ -64,6 +64,15 @@ export default {
         },
         {
           id: 2,
+          name: 'ecommerce',
+          title: 'Audiophile e-commerce website',
+          link: 'https://ecommerce-example-contentful.vercel.app/',
+          source: 'https://github.com/antinomezco/ecommerce-example-contentful',
+          tech: 'React (Next), Tailwind, Contentful',
+          desc: 'My first Next.js project. Fully responsive fake e-commerce website in which you can browse through the categories/products, add and remove items from the cart state, form validation for payment and more. Using Contentful as a backend for images and text.',
+        },
+        {
+          id: 3,
           name: 'recipe',
           title: 'Recipe Database (frontend)',
           link: 'https://agitated-hermann-0d809c.netlify.app/',
@@ -72,7 +81,7 @@ export default {
           desc: 'Searchable recipe website to store my favorite recipes and share them with my friends/family. Website was made using VueJS with authentication through Auth0. Dynamically created recipe pages, CRUD and image storage through Firebase storage buckets available.',
         },
         {
-          id: 3,
+          id: 4,
           name: 'reciperest',
           title: 'Recipe Database (backend)',
           link: '',
@@ -81,7 +90,7 @@ export default {
           desc: 'API for use in the above Recipe Database. Allows for REST CRUD connections for users and recipes.',
         },
         {
-          id: 3,
+          id: 5,
           name: 'spacetourism',
           title: 'Space Tourism',
           link: 'https://thirsty-archimedes-a0d572.netlify.app/',
@@ -90,7 +99,7 @@ export default {
           desc: 'Simple landing page for improving my skills using Tailwind.',
         },
         {
-          id: 4,
+          id: 6,
           name: 'portfolio',
           title: 'Portfolio page',
           link: 'https://www.csaldana.xyz',
