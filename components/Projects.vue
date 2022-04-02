@@ -87,7 +87,7 @@ export default {
           link: '',
           source: 'https://github.com/antinomezco/cookingdb',
           tech: 'Django, Postgres, Rest',
-          desc: 'API for use in the above Recipe Database. Allows for REST CRUD connections for users and recipes.',
+          desc: 'Django server used an an API for the above Recipe Database. Allows for REST CRUD connections for users and recipes.',
         },
         {
           id: 5,
