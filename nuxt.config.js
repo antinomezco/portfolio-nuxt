@@ -33,6 +33,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    '@nuxtjs/cloudinary'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -44,5 +45,10 @@ export default {
       'Open+Sans': true,
       'Roboto+Slab' : true,
     }
+  },
+
+  cloudinary: {
+    cloudName: process.env.CLOUDINARY_CLOUDNAME,
+    useComponent: true
   }
 }

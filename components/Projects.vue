@@ -1,14 +1,31 @@
 <template>
   <section class="Projects px-5">
     <b-row class="justify-content-center">
-      <b-col lg="6" md="8" sm="10" cols="12">
-        <p class="text-center title-text pb-3" id="projects">
+      <b-col
+        lg="6"
+        md="8"
+        sm="10"
+        cols="12"
+      >
+        <p
+          class="text-center title-text pb-3"
+          id="projects"
+        >
           Projects and/or Experience
         </p>
       </b-col>
     </b-row>
-    <b-row v-for="box in boxes" :key="box.name" class="boxes pb-5 justify-content-center">
-      <b-col lg="5" md="6" cols="12" class="d-flex flex-column justify-content-center">
+    <b-row
+      v-for="box in boxes"
+      :key="box.name"
+      class="boxes pb-5 justify-content-center"
+    >
+      <b-col
+        lg="5"
+        md="6"
+        cols="12"
+        class="d-flex flex-column justify-content-center"
+      >
         <div class="font-size-biggish purple">
           {{ box.title }}
         </div>
@@ -22,29 +39,60 @@
         </div>
         <div class="d-flex align-items-center">
           <div v-if="box.link">
-            <b-button variant="outline-dark" class="link-text mr-2 mr-lg-5 purple" :href="box.link" target="_blank">Live demo</b-button>
+            <b-button
+              variant="outline-dark"
+              class="link-text mr-2 mr-lg-5 purple"
+              :href="box.link"
+              target="_blank"
+            >Live demo</b-button>
           </div>
           <div v-if="box.source">
-            <b-button variant="link" class="font-size-biggish link-text text-decoration-none" :href="box.source" target="_blank">
+            <b-button
+              variant="link"
+              class="font-size-biggish link-text text-decoration-none"
+              :href="box.source"
+              target="_blank"
+            >
               Source Code
             </b-button>
           </div>
         </div>
       </b-col>
-      <b-col lg="5" md="6" sm="12" cols="12" class="pt-3">
-        <div class="">
-          <a :href="box.link" target="_blank">
+      <b-col
+        lg="5"
+        md="6"
+        sm="12"
+        cols="12"
+        class="pt-3"
+      >
+        <div class="" style="border: 5px solid black; border-radius: 9px;">
+          <cld-video
+            class="w-100"
+            v-if="box.video"
+            :public-id=box.video
+            controls="true"
+          >
+            <cld-poster
+              crop="scale"
+              quality="auto"
+            />
+          </cld-video>
+          <a
+            v-else
+            :href="box.link"
+            target="_blank"
+          >
             <b-img
-              thumbnail
               fluid-grow
               rounded
-              :src="require(`../assets/images/${box.name}.png`)"
+              :src="box.imageSrc"
               alt=""
             />
           </a>
         </div>
       </b-col>
     </b-row>
+
   </section>
 </template>
 
@@ -56,6 +104,8 @@ export default {
         {
           id: 1,
           name: 'magazine',
+          imageSrc:
+            'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591601/portfolio/magazine_nufzwg.jpg',
           title: 'Le Centre franco-ontarien de ressources pédagogiques',
           link: 'https://numerico.cforp.ca/magazines',
           source: '',
@@ -65,6 +115,9 @@ export default {
         {
           id: 2,
           name: 'ecommerce',
+          imageSrc:
+            'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591602/portfolio/ecommerce_ieqba2.png',
+          video: 'portfolio/audiophile_ynupwb',
           title: 'Audiophile e-commerce website',
           link: 'https://ecommerce-example-contentful.vercel.app/',
           source: 'https://github.com/antinomezco/ecommerce-example-contentful',
@@ -74,6 +127,9 @@ export default {
         {
           id: 3,
           name: 'recipe',
+          imageSrc:
+            'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591616/portfolio/recipe_d9wj3r.png',
+
           title: 'Recipe Database (frontend)',
           link: 'https://agitated-hermann-0d809c.netlify.app/',
           source: 'https://github.com/antinomezco/calaveria',
@@ -83,6 +139,9 @@ export default {
         {
           id: 4,
           name: 'reciperest',
+          imageSrc:
+            'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591605/portfolio/reciperest_frhqfq.png',
+
           title: 'Recipe Database (backend)',
           link: '',
           source: 'https://github.com/antinomezco/cookingdb',
@@ -92,6 +151,9 @@ export default {
         {
           id: 5,
           name: 'spacetourism',
+          imageSrc:
+            'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591610/portfolio/spacetourism_jeoao9.png',
+
           title: 'Space Tourism',
           link: 'https://thirsty-archimedes-a0d572.netlify.app/',
           source: 'https://github.com/antinomezco/space-tourism-nuxt',
@@ -102,11 +164,14 @@ export default {
           id: 6,
           name: 'portfolio',
           title: 'Portfolio page',
+          imageSrc:
+            'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591602/portfolio/portfolio_amjro8.png',
+
           link: 'https://www.csaldana.xyz',
           source: 'https://github.com/antinomezco/portfolio-nuxt',
           tech: 'VueJS (Nuxt), Boostrap-vue',
           desc: 'Portfolio page to show my skills. Inspired by the Simplefolio template.',
-        }
+        },
       ],
     }
   },
