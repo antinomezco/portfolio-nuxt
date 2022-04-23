@@ -1,5 +1,5 @@
 <template>
-  <section class="Projects px-5">
+  <section class="px-5">
     <b-row class="justify-content-center">
       <b-col
         lg="6"
@@ -66,8 +66,7 @@
         class="pt-3"
       >
         <div class="" style="border: 5px solid black; border-radius: 9px;">
-          <cld-video
-          style="border-radius: 4px;"
+          <!-- <cld-video
             class="w-100"
             v-if="box.video"
             :public-id=box.video
@@ -75,19 +74,17 @@
           >
             <cld-poster
               crop="scale"
-              :public-id=box.imageSrc
               quality="auto"
             />
-          </cld-video>
+          </cld-video> -->
           <a
-            v-else
             :href="box.link"
             target="_blank"
           >
-            <cld-image
-            style="border-radius: 5px;"
-              responsive
-              :public-id="box.imageSrc"
+            <b-img
+              fluid-grow
+              rounded
+              :src="box.imageSrc"
               alt=""
             />
           </a>
@@ -107,7 +104,7 @@ export default {
           id: 1,
           name: 'magazine',
           imageSrc:
-            'portfolio/magazine_nufzwg',
+            'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591601/portfolio/magazine_nufzwg.jpg',
           title: 'Le Centre franco-ontarien de ressources pédagogiques',
           link: 'https://numerico.cforp.ca/magazines',
           source: '',
@@ -118,7 +115,7 @@ export default {
           id: 2,
           name: 'ecommerce',
           imageSrc:
-            'portfolio/ecommerce_ieqba2',
+            'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650743280/portfolio/ecommerce_ieqba2_xolmnl.png',
           video: 'portfolio/audiophile_ynupwb',
           title: 'Audiophile e-commerce website',
           link: 'https://ecommerce-example-contentful.vercel.app/',
@@ -130,7 +127,7 @@ export default {
           id: 3,
           name: 'recipe',
           imageSrc:
-            'portfolio/recipe_d9wj3r',
+            'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591616/portfolio/recipe_d9wj3r.png',
 
           title: 'Recipe Database (frontend)',
           link: 'https://agitated-hermann-0d809c.netlify.app/',
@@ -142,7 +139,7 @@ export default {
           id: 4,
           name: 'reciperest',
           imageSrc:
-            'portfolio/reciperest_frhqfq',
+            'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591605/portfolio/reciperest_frhqfq.png',
 
           title: 'Recipe Database (backend)',
           link: '',
@@ -154,7 +151,7 @@ export default {
           id: 5,
           name: 'spacetourism',
           imageSrc:
-            'portfolio/spacetourism_jeoao9',
+            'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591610/portfolio/spacetourism_jeoao9.png',
 
           title: 'Space Tourism',
           link: 'https://thirsty-archimedes-a0d572.netlify.app/',
@@ -167,7 +164,7 @@ export default {
           name: 'portfolio',
           title: 'Portfolio page',
           imageSrc:
-            'portfolio/portfolio_amjro8',
+            'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591602/portfolio/portfolio_amjro8.png',
 
           link: 'https://www.csaldana.xyz',
           source: 'https://github.com/antinomezco/portfolio-nuxt',
