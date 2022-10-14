@@ -66,17 +66,6 @@
         class="pt-3"
       >
         <div class="" style="border: 5px solid black; border-radius: 9px;">
-          <!-- <cld-video
-            class="w-100"
-            v-if="box.video"
-            :public-id=box.video
-            controls="true"
-          >
-            <cld-poster
-              crop="scale"
-              quality="auto"
-            />
-          </cld-video> -->
           <a
             :href="box.link"
             target="_blank"
@@ -102,6 +91,17 @@ export default {
       boxes: [
         {
           id: 1,
+          name: 'workstaff',
+          imageSrc:
+            'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591601/portfolio/magazine_nufzwg.jpg',
+          title: 'Workstaff',
+          link: 'https://workstaff.app',
+          source: '',
+          tech: 'React (Docusaurus), Angular',
+          desc: 'Customized their Docusaurus blog and built Angular components by using internal reusable components and RxJS observables.',
+        },
+        {
+          id: 1,
           name: 'magazine',
           imageSrc:
             'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591601/portfolio/magazine_nufzwg.jpg',
@@ -116,7 +116,6 @@ export default {
           name: 'ecommerce',
           imageSrc:
             'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650743280/portfolio/ecommerce_ieqba2_xolmnl.png',
-          video: 'portfolio/audiophile_ynupwb',
           title: 'Audiophile e-commerce website',
           link: 'https://ecommerce-example-contentful.vercel.app/',
           source: 'https://github.com/antinomezco/ecommerce-example-contentful',
