@@ -33,7 +33,7 @@
       <b-col>
         <hr />
         <div class="text-center text-white">
-          <p>{{ madeBy }}</p>
+          <p>© {{ new Date().getFullYear() }} - Constantino Saldana</p>
         </div>
       </b-col>
     </b-row>
@@ -50,11 +50,6 @@ export default {
           title: 'Github',
           srcImage: 'github',
           href: 'https://github.com/antinomezco',
-        },
-        {
-          title: 'Resumé',
-          srcImage: 'cv',
-          href: 'https://drive.google.com/file/d/1BN-iVteSjSrsRDsF62eaxipoa9kQPjBi/view?usp=sharing',
         },
         {
           title: 'LinkedIn',
