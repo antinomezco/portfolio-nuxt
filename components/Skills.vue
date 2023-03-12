@@ -3,7 +3,7 @@
     <b-row>
       <b-col class="text-center">
         <p class="title-text pb-3" id="skills">Skills</p>
-        <p class="regular-text p-2">
+        <p class="regular-text font-weight-bold p-2">
           Besides the usual JavaScript, HTML and CSS skills...
         </p>
       </b-col>
@@ -13,13 +13,7 @@
         <div class="d-flex flex-wrap">
           <div v-for="skill in skills" :key="skill.title" class="m-auto">
             <b-link target="_blank" class="p-3" :href="skill.web">
-              <b-img
-                height="100"
-                weight="100"
-                :src="skill.imageSrc"
-                :alt="skill.alt"
-                :title="skill.alt"
-              />
+              <b-img height="100" weight="100" rounded :src="skill.imageSrc" :alt="skill.alt" :title="skill.alt" />
             </b-link>
             <p class="p-2 font-weight-bold">{{ skill.alt }}</p>
           </div>
@@ -35,14 +29,13 @@ export default {
   data() {
     return {
       skills: [
-        { title: 'vue', imageSrc: 'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591600/portfolio/vue_n7qtcp.webp',  alt: 'Vue.js', web: 'https://vuejs.org/v2/guide/' },
+        { title: 'vue', imageSrc: 'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591600/portfolio/vue_n7qtcp.webp', alt: 'Vue.js', web: 'https://vuejs.org/v2/guide/' },
         { title: 'react', imageSrc: 'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591602/portfolio/react_hcpoe2.webp', alt: 'React', web: 'https://reactjs.org/' },
-        { title: 'strapi', imageSrc: 'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591607/portfolio/strapi_deuotd.webp', alt: 'Strapi', web: 'https://strapi.com/' },
-        { title: 'bootstrap-vue', imageSrc: 'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591600/portfolio/bootstrap-vue_q7fyzn.webp', alt: 'BootstrapVue', web: 'https://bootstrap-vue.org/' },
+        { title: 'typescript', imageSrc: 'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1678652490/portfolio/TS_mw2ybp.png', alt: 'TypeScript', web: 'https://www.typescriptlang.org/' },
         { title: 'tailwind-css', imageSrc: 'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591599/portfolio/tailwind-css_f1vrfx.webp', alt: 'TailwindCSS', web: 'https://tailwindcss.com/' },
         {
           title: 'django',
-           imageSrc: 'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591600/portfolio/django_mzdylu.webp',
+          imageSrc: 'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591600/portfolio/django_mzdylu.webp',
           alt: 'Django',
           web: 'https://learndjango.com/tutorials/what-django-python',
         },
@@ -52,6 +45,9 @@ export default {
           alt: 'PostgreSQL',
           web: 'https://www.postgresql.org/about/',
         },
+        { title: 'strapi', imageSrc: 'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591607/portfolio/strapi_deuotd.webp', alt: 'Strapi', web: 'https://strapi.com/' },
+        { title: 'supabase', imageSrc: 'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1678655070/portfolio/c0dbe341-1d94-4192-a93b-921519678894_p1srax.png', alt: 'Supabase', web: 'https://supabase.com/' },
+
         { title: 'git', imageSrc: 'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591600/portfolio/git_gyto0o.webp', alt: 'Git', web: 'https://git-scm.com/' },
       ],
     }
