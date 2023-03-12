@@ -6,10 +6,13 @@
         <PhotoDescImage />
       </b-col>
       <b-col lg="4" md="6" sm="8" cols="10" class="d-flex align-items-center">
-        <p class="font-weight-bold text-white regular-text">I'm Constantino, a trilingual (English, French and Spanish) Full Stack developer based in Montreal, specializing in web development using VueJS as a frontend alongside Django as an API backend or Strapi as a headless CMS.</p>
+        <p class="font-weight-bold text-white regular-text">I'm Constantino, a trilingual (English, French and Spanish)
+          Full Stack developer based in Montreal, specializing in web development using VueJS 2/3 (Nuxt) as a frontend and
+          Django/Supabase as a Postgres Database backend or a headless CMS like Contentful or Strapi (customizing the
+          latter to fit specific reusability requirements).</p>
       </b-col>
     </b-row>
-    <BaseScrollTo desc="Check out my projects" variantColor="outline-light" descendTo="projects"/>
+    <BaseScrollTo desc="Check out my projects" variantColor="outline-light" descendTo="projects" />
   </section>
 </template>
 
