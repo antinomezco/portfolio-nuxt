@@ -1,31 +1,14 @@
 <template>
   <section class="px-5">
     <b-row class="justify-content-center">
-      <b-col
-        lg="6"
-        md="8"
-        sm="10"
-        cols="12"
-      >
-        <p
-          class="text-center title-text pb-3"
-          id="projects"
-        >
+      <b-col lg="6" md="8" sm="10" cols="12">
+        <p class="text-center title-text pb-3" id="projects">
           Projects and/or Experience
         </p>
       </b-col>
     </b-row>
-    <b-row
-      v-for="box in boxes"
-      :key="box.name"
-      class="boxes pb-5 justify-content-center"
-    >
-      <b-col
-        lg="5"
-        md="6"
-        cols="12"
-        class="d-flex flex-column justify-content-center"
-      >
+    <b-row v-for="box in boxes" :key="box.name" class="boxes pb-5 justify-content-center">
+      <b-col lg="5" md="6" cols="12" class="d-flex flex-column justify-content-center">
         <div class="font-size-biggish purple">
           {{ box.title }}
         </div>
@@ -39,43 +22,21 @@
         </div>
         <div class="d-flex align-items-center">
           <div v-if="box.link">
-            <b-button
-              variant="outline-dark"
-              class="link-text mr-2 mr-lg-5 purple"
-              :href="box.link"
-              target="_blank"
-            >Live demo</b-button>
+            <b-button variant="outline-dark" class="link-text mr-2 mr-lg-5 purple" :href="box.link" target="_blank">Live
+              demo</b-button>
           </div>
           <div v-if="box.source">
-            <b-button
-              variant="link"
-              class="font-size-biggish link-text text-decoration-none"
-              :href="box.source"
-              target="_blank"
-            >
+            <b-button variant="link" class="font-size-biggish link-text text-decoration-none" :href="box.source"
+              target="_blank">
               Source Code
             </b-button>
           </div>
         </div>
       </b-col>
-      <b-col
-        lg="5"
-        md="6"
-        sm="12"
-        cols="12"
-        class="pt-3"
-      >
+      <b-col lg="5" md="6" sm="12" cols="12" class="pt-3">
         <div class="" style="border: 5px solid black; border-radius: 9px;">
-          <a
-            :href="box.link"
-            target="_blank"
-          >
-            <b-img
-              fluid-grow
-              rounded
-              :src="box.imageSrc"
-              alt=""
-            />
+          <a :href="box.link" target="_blank">
+            <b-img fluid-grow rounded :src="box.imageSrc" alt="" />
           </a>
         </div>
       </b-col>
@@ -90,7 +51,7 @@ export default {
     return {
       boxes: [
         {
-          id: 1,
+          id: 0,
           name: 'workstaff',
           imageSrc:
             'https://res.cloudinary.com/dlgsjm7jt/image/upload/v1650591601/portfolio/magazine_nufzwg.jpg',
@@ -109,7 +70,7 @@ export default {
           link: 'https://numerico.cforp.ca/magazines',
           source: '',
           tech: 'VueJS (Nuxt), Boostrap-vue, Tailwind, Strapi',
-          desc: 'Built QUAD9 and Mon Mag À Moi magazine articles using Bootstrap-vue and Tailwind. Created strapi backend to dynamically reuse magazine article templates.',
+          desc: 'Built QUAD9 and Mon Mag À Moi magazine articles using Bootstrap-vue and Tailwind for the issues of February/2022, May/2022, September/2022 and February/2023. Created reusable custom components to shorten development time by 60%. Created strapi backend to dynamically reuse magazine article templates.',
         },
         {
           id: 2,
